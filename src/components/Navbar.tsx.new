@@ -1,0 +1,58 @@
+import { useState } from "react";
+import { Home, FolderKanban, UserCircle2, Mail, Sparkles } from "lucide-react";
+
+type NavItem = {
+  label: string;
+  href: string;
+  icon: JSX.Element;
+};
+
+const navItems: NavItem[] = [
+  { label: "Home", href: "#home", icon: <Home size={18} /> },
+  { label: "Project", href: "#project", icon: <FolderKanban size={18} /> },
+  { label: "Profile", href: "#profile", icon: <UserCircle2 size={18} /> },
+  { label: "Contact", href: "#contact", icon: <Mail size={18} /> },
+];
+
+function Navbar() {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
+      <nav
+        onMouseEnter={() => setExpanded(true)}
+        onMouseLeave={() => setExpanded(false)}
+        className={`flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 ease-out ${expanded ? "w-[min(78vw,22rem)] sm:w-[min(32vw,22rem)] lg:w-[min(25vw,22rem)]" : "w-[4.25rem]"}`}
+      >
+        <div className="flex shrink-0 items-center justify-center rounded-full border border-white/15 bg-black/20 p-2 text-white">
+          <Sparkles size={17} />
+        </div>
+
+        <div className={`ml-2 overflow-hidden transition-all duration-300 ${expanded ? "max-w-[90px] opacity-100" : "max-w-0 opacity-0"}`}>
+          <span className="whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70">
+            Menu
+          </span>
+        </div>
+
+        <div className="ml-3 flex flex-1 items-center justify-end gap-2">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className={`group flex items-center justify-center rounded-full px-2.5 py-2 text-white transition-all duration-300 hover:bg-white/15 ${expanded ? "gap-2 pr-3" : "gap-0"}`}
+            >
+              <span className="shrink-0 text-white/90">{item.icon}</span>
+              <span
+                className={`overflow-hidden whitespace-nowrap text-sm font-medium transition-all duration-300 ${expanded ? "max-w-[90px] translate-x-0 opacity-100" : "max-w-0 -translate-x-2 opacity-0"}`}
+              >
+                {item.label}
+              </span>
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+export default Navbar;
