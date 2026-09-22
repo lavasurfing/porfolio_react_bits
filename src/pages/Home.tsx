@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSectionHeading from "../components/HeroSectionHeading";
 import Carousel from "../components/Carousel";
 import Profile from "../components/Profile";
+import Contact from "../components/Contact";
 
 const Home = () => {
     return (
@@ -23,6 +24,9 @@ const Home = () => {
             </section>
             <section className="bg-black">
                 <Profile />
+            </section>
+            <section className="bg-black">
+                <Contact />
             </section>
         </>
     );

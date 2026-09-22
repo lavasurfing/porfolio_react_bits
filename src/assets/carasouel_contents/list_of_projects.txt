@@ -1,0 +1,11 @@
+- AI Agetic AI to AI haress for the whole infractrucrture data secured and travels in a closed loop and Harness all agetic AI which included orchestations and motinoring 
+
+- Hugging based Agentic AI workflow : These workflow is for every task HR automations. Financial Analysis or Other operations
+
+- Docker : Computing platforms with Nvida CUDA heavy server loads managed in pods.
+
+- Ace in React : Get most advance pages and UI for webapps or any complex setup
+
+- API load testing and optimization in cases of heavy load or sudden burst of users
+
+- System designing : research most recent tech stack for faster cost effective and relible flow of operations

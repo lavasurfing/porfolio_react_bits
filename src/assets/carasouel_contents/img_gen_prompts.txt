@@ -1,0 +1,151 @@
+PORTFOLIO IMAGE GENERATION PROMPTS
+==================================
+Use these prompts to generate carousel / project cover art for the portfolio.
+Each image should feel abstract and intelligent — suggest the theme without literal UI screenshots,
+logos, or text labels.
+
+GLOBAL STYLE (append to every prompt)
+------------------------------------
+dark editorial tech aesthetic, near-black background (#0a0a0a to #111827), cinematic lighting,
+soft volumetric glow, minimal composition, premium portfolio quality, subtle grain,
+no text, no logos, no watermarks, no faces, no stock-photo clichés, 16:9 aspect ratio,
+high contrast with restrained accent color, clean negative space on one side for overlay text
+
+SITE COLOR PALETTE (pick one accent per image)
+----------------------------------------------
+- Project 1: deep violet (#8b5cf6) + teal (#0f766e)
+- Project 2: amber (#f59e0b) + warm charcoal
+- Project 3: emerald (#22c55e) + slate black
+- Project 4: sky cyan (#38bdf8) + midnight blue
+- Project 5: burnt orange (#f97316) + dark graphite
+- Project 6: soft lavender (#a78bfa) + indigo (#312e81)
+
+
+================================================================================
+PROJECT 1 — Agentic AI Infrastructure Harness
+Suggested filename: project-01-agentic-harness.webp
+Accent: violet + teal
+================================================================================
+
+MAIN PROMPT:
+An abstract illustration of a secure closed-loop network: three luminous nodes orbiting inside
+a translucent circular boundary, connected by thin encrypted light trails that never exit the ring.
+A central orchestration core pulses quietly, with faint telemetry arcs tracing motion between nodes.
+Feels like governed intelligence — controlled, monitored, and contained. Minimal, futuristic,
+architectural rather than robotic.
+
+NEGATIVE PROMPT:
+robots, humanoid AI, chat bubbles, server racks, padlocks, cartoon shields, bright white background,
+busy clutter, readable text, brand logos
+
+
+================================================================================
+PROJECT 2 — Hugging Face Agentic Workflow Automation
+Suggested filename: project-02-workflow-automation.webp
+Accent: amber + warm charcoal
+================================================================================
+
+MAIN PROMPT:
+A modular pipeline visualized as floating glass channels that branch and rejoin — one stream carries
+document-like light fragments, another carries chart-like geometric pulses, a third carries repeating
+task symbols as soft amber sparks. All paths converge through a single elegant routing hub, implying
+reusable automation across different business domains. Warm, intelligent, editorial — not a dashboard.
+
+NEGATIVE PROMPT:
+office workers, HR interview scenes, stock market tickers, Hugging Face logo, literal spreadsheets,
+cluttered SaaS UI mockups, cheerful corporate illustration style
+
+
+================================================================================
+PROJECT 3 — GPU Compute Platform (Docker + NVIDIA CUDA)
+Suggested filename: project-03-gpu-compute.webp
+Accent: emerald + slate black
+================================================================================
+
+MAIN PROMPT:
+A cluster of translucent container cubes suspended in dark space, each cube housing a glowing
+green compute core like a contained star. Thin energy lines show load balancing between pods —
+some cores burn brighter, others dim, suggesting dynamic scheduling under heavy parallel work.
+Evokes raw throughput and isolation, not a data-center photograph.
+
+NEGATIVE PROMPT:
+NVIDIA logo, Docker whale logo, real server room photos, green matrix code rain, gaming GPUs,
+neon cyberpunk city, excessive wire clutter
+
+
+================================================================================
+PROJECT 4 — Advanced React Interfaces
+Suggested filename: project-04-react-interfaces.webp
+Accent: sky cyan + midnight blue
+================================================================================
+
+MAIN PROMPT:
+An elegant abstract composition of layered translucent UI planes — overlapping panels, depth,
+soft cyan edge light, and precise geometric rhythm. Feels like a sophisticated interface system
+mid-motion: structured, responsive, and refined. Think design-system poetry, not a literal webpage
+screenshot. Smooth gradients, glass surfaces, calm confidence.
+
+NEGATIVE PROMPT:
+actual browser window, React logo, JSX code snippets, generic landing page mockup, flat Material UI,
+purple gradient startup template, icons with labels, device frames
+
+
+================================================================================
+PROJECT 5 — API Load Testing & Optimization
+Suggested filename: project-05-api-performance.webp
+Accent: burnt orange + dark graphite
+================================================================================
+
+MAIN PROMPT:
+A single luminous data highway cutting through darkness — first calm and narrow, then expanding
+into a controlled surge of orange light pulses representing burst traffic. Further along the path,
+the flow compresses back into a smooth, optimized stream. Conveys stress, measurement, and refinement
+without charts or numbers. Dynamic but disciplined.
+
+NEGATIVE PROMPT:
+line graphs with axes, dashboard analytics, speedometer icons, stopwatch, literal API documentation,
+red error screens, explosion effects, chaos without structure
+
+
+================================================================================
+PROJECT 6 — System Design for Scalable Operations
+Suggested filename: project-06-system-design.webp
+Accent: lavender + indigo
+================================================================================
+
+MAIN PROMPT:
+A blueprint-like constellation of interconnected nodes floating in indigo space — some nodes larger
+(hub services), some smaller (edge units), linked by balanced pathways that suggest redundancy and
+efficiency rather than complexity. Soft lavender blueprint lines, architectural calm, strategic thinking
+made visual. Feels like an elegant map of decisions and trade-offs, not a whiteboard diagram.
+
+NEGATIVE PROMPT:
+hand-drawn whiteboard, sticky notes, cloud provider logos, AWS/Azure/GCP icons, maze complexity,
+overloaded network spaghetti, textbook architecture diagram with labels
+
+
+================================================================================
+QUICK COPY — ONE-LINE VERSIONS (for Midjourney / DALL·E / Flux)
+================================================================================
+
+1. Abstract closed-loop orchestration ring with three glowing agent nodes, encrypted light trails, violet and teal accents on black, cinematic minimal tech art, no text --ar 16:9
+
+2. Modular branching glass pipeline merging document fragments, chart geometry, and task sparks through one amber routing hub, warm dark editorial illustration, no text --ar 16:9
+
+3. Floating translucent container cubes each holding a green compute core, energy lines balancing load between pods, emerald glow on slate black, abstract infrastructure art, no text --ar 16:9
+
+4. Layered translucent UI planes with cyan edge light and geometric depth, elegant motion and glass surfaces, midnight blue background, abstract frontend design art, no text --ar 16:9
+
+5. Luminous data highway shifting from calm flow to controlled orange burst then back to smooth optimized stream, dark graphite space, abstract performance engineering art, no text --ar 16:9
+
+6. Indigo constellation of balanced interconnected nodes with soft lavender blueprint lines, scalable architecture metaphor, calm strategic system design illustration, no text --ar 16:9
+
+
+================================================================================
+POST-GENERATION NOTES
+================================================================================
+- Export at 1920x1080 or 1600x900 minimum for carousel use
+- Prefer WebP for the site; keep PNG source as backup
+- Slightly darken images if they feel too bright against the black portfolio background
+- Crop with subject weight on left or center — carousel overlays text on the right on desktop
+- After generation, update image paths in CarasouelContents.tsx
