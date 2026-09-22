@@ -1,4 +1,5 @@
 import ProfileCard from "../ui/ProfileCard";
+import profilePic from "../assets/carasouel_images/profile_pic.png";
 
 const Profile = () => {
   return (
@@ -11,7 +12,7 @@ const Profile = () => {
             handle="javicodes"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="src\assets\carasouel_images\profile_pic.png"
+            avatarUrl={profilePic}
             showUserInfo={false}
             enableTilt={true}
             enableMobileTilt={false}
