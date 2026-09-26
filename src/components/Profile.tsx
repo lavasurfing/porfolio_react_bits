@@ -3,10 +3,11 @@ import profilePic from "../assets/carasouel_images/profile_pic.png";
 
 const Profile = () => {
   return (
-    <section className="w-full bg-black px-3 py-16 text-white sm:px-6 sm:py-20 lg:px-8">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 rounded-[2rem] border border-white/10 bg-zinc-950/70 p-5 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:gap-10 sm:p-8 lg:flex-row lg:items-center lg:p-12">
-        <div className="flex w-full justify-center lg:w-[42%]">
+    <section id="profile" className="w-full overflow-x-hidden bg-black px-5 py-16 text-white sm:px-6 sm:py-20 lg:px-8">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 rounded-[1.5rem] border border-white/10 bg-zinc-950/70 p-5 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:gap-10 sm:rounded-[2rem] sm:p-8 lg:flex-row lg:items-center lg:p-12">
+        <div className="flex w-full max-w-full justify-center overflow-hidden lg:w-[42%]">
           <ProfileCard
+            className="max-w-full"
             name="Ashish Hansdah"
             title="System Architect"
             handle="javicodes"

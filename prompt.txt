@@ -1,0 +1,12 @@
+Moblie optimization issue: 
+
+for mobile optimization, the carasouel left and right margin is too less
+which prevent scrolling down when using moblie device
+
+Shape of the carasouel for moblie is very tall looking, in case of moblie 
+the pic should appear , rectangular shape below the text and and read more button
+
+this whenver read mode button is activated the carasouel will be stopped
+
+profile section : margin left and right is as too less gap which prevent scrolling using 
+mobile 

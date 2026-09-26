@@ -4,7 +4,7 @@ const EMAIL = "ashishhansdah0@gmail.com";
 
 const Contact = () => {
   return (
-    <section className="relative min-h-[70vh] w-full overflow-hidden text-white sm:min-h-[600px]">
+    <section id="contact" className="relative min-h-[70vh] w-full overflow-hidden text-white sm:min-h-[600px]">
       <div className="absolute inset-0">
         <Galaxy
           mouseRepulsion
